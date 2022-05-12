@@ -1,0 +1,421 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header{
+    width: 100%;
+    height: 60px;
+    /* padding: 10px 0; */
+    background-color: rgba(0 0 0/0.9);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+
+}
+.container{
+    width: 90%;
+    /* background-color:red; */
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 25%;
+    /* height: 70px; */
+    /* background-color: yellow; */
+    /* border-radius:50%; */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+    
+}
+.logo p{
+    font-weight: 600;
+    letter-spacing:2px;
+    font-size: 2.5rem;
+    color:yellow;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.nav{
+    /* width: 60%; */
+    /* background-color:yellow; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    
+}
+.pro_img{
+    width:32px;
+    height:32px;
+    cursor: pointer;
+    /* margin-right: 20px; */
+}
+.nav img{
+    width: 100%;
+    height: auto;
+    border-radius:50%
+}
+
+.search_bar{
+    /* width: 10%; */
+    display: flex;
+    background-color:#fff;
+    border-radius:4px;
+    overflow: hidden;
+    margin-right: 20px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    padding: 0 10px;
+
+}
+.search_bar input{
+    padding: 5px 5px;
+    border: none;
+    outline: none;
+    text-indent: 5px;
+    font-size:1.2rem;
+}
+.search_bar i{
+    padding: 8px;
+    cursor: pointer;
+
+}
+
+
+/* STYLE FOR BANNER */
+
+/* https://c4.wallpaperflare.com/wallpaper/52/373/222/john-wick-movie-keanu-reeves-john-wick-poster-wallpaper-preview.jpg */
+
+.banner{
+    max-width: 100%;
+    position: relative;
+    height: 50vh;
+    background: linear-gradient(to bottom,rgba(0,0,0,.1),rgba(0,0,0,0.9)), url("https://webneel.net/file/images/11-16/8-xmen-movie-poster-design.jpg");
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.second_banner{
+    background: linear-gradient(to bottom,rgba(0,0,0,.1),rgba(0,0,0,0.9)), url("https://c4.wallpaperflare.com/wallpaper/52/373/222/john-wick-movie-keanu-reeves-john-wick-poster-wallpaper-preview.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+/* .banner::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right ,rgba(0,0,0,1) 10%,rgba(0,0,0,0.4)50%);
+} */
+.banner_content{
+    width: 50%;
+    padding-left: 50px;
+    padding-top: 60px;
+}
+.banner_heading{
+    font-size: 3rem;
+    color: #e9e9e9;
+    letter-spacing:2px;
+    line-height: 1.5;
+}
+.banner_desc{
+    font-size:1.2rem;
+    color: #fff;
+    margin-bottom:20px;
+}
+.banner_btn{
+    padding: 10px 20px;
+    font-size:1.2rem;
+    background-color: #E0BB20;
+    border-radius:5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-weight: 600;
+}
+/* MOVIE CARDS */
+
+.movie_cards_section{
+    width: 100%;
+    padding: 20px 0;
+    background-color: black;
+    position: relative;
+    /* z-index: 3; */
+
+}
+.card_container{
+    width: 95%;
+    margin: 0 auto;
+}
+.card-wrapper{
+    position: relative;
+}
+
+.section_head{
+    padding:20px 0;
+    color: yellow;
+}
+
+.card_row{
+    display: flex;
+    column-gap: 20px;
+    /* background-color:yellow; */
+    padding:10px 10px ;
+    align-items: center;
+    justify-content: center;
+    overflow-x:scroll;
+    position:relative;
+    z-index: 2;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;    
+    
+}
+.card_row::-webkit-scrollbar{
+    visibility: hidden;
+    
+}
+.cards{
+    flex-shrink: 0;
+    height: 250px;
+    cursor: pointer;
+    z-index: 1;
+}
+.cards img{
+    width: 100%;
+    height: 100%;
+
+}
+
+.buttons{
+    /* background-color:red; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display:flex;
+    color:yellow;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px;
+}
+.buttons button{
+    background-color:rgb(0 0 0 / 80%);
+    padding: 10px;
+    color: white;
+    font-size: 1.5rem;
+    z-index: 2;
+    cursor: pointer;
+}
+
+
+/* MEDIA QUERIES  */
+
+/* for Banner */
+
+
+@media (min-width:320px) and (max-width:480px) {
+    html{
+        font-size:12px;
+    }
+
+    .header{
+        padding: 5px 0;  
+        height:50px;     
+    }
+    .logo{
+        width:50%;
+    }
+    .logo p{
+        font-size:1.8rem;
+    }
+    .search_bar input {
+        font-size: .5rem;
+        padding: 0;
+    }
+    .search_bar i {
+        padding: 5px;
+    }
+    .banner{
+        height: 30vh;       
+    }
+    .pro_img {
+        width: 28px;
+        height: 28px;
+        cursor: pointer;
+        /* margin-right: 20px; */
+    }   
+    .cards{
+        height: 150px;
+    }
+    .banner_content {
+        width: 90%;
+        padding-left: 25px;
+        padding-top: 30px;
+    }
+    .banner_heading {
+        font-size: 2rem;
+        line-height: 1.4;
+    }
+    .banner_desc {
+        font-size: 1.1rem;
+        margin-bottom: 8px;
+    }
+    .banner_btn {
+        padding: 5px 15px;
+        font-size: 1.1rem;      
+    }
+    
+}
+@media (min-width:481px) and (max-width:768px) {
+
+    html{
+        font-size:14px;
+    }
+    .header{
+        height: 50px;
+    }
+   
+    .logo{
+        width: 40%;
+    }
+    .logo p{
+        font-size:1.5rem;
+    }
+    .search_bar input {
+        font-size: 1.2rem;
+        padding: 0;
+    }
+    .cards{
+        height: 200px;
+    }
+    .banner{
+        height:45vh;
+    }
+    /* .banner_content {
+        width: 65%;
+        padding-left: 50px;
+        padding-top: 180px;
+    } */
+    .banner_content {
+        width: 65%;
+        padding-left: 40px;
+        padding-top: 36px;
+    }
+    .banner_heading {
+        font-size: 2rem;
+        line-height: 1.4;
+    }
+    .banner_desc {
+        font-size: 1.1rem;
+        margin-bottom: 8px;
+    }
+    .banner_btn {
+        padding: 5px 15px;
+        font-size: 1.1rem;      
+    }
+    
+
+
+}
+@media (min-width:769px) and (max-width:1024px) {
+    .banner{
+        height:50vh;
+    }
+    .logo p{
+        font-size:2rem;
+    }
+    .search_bar input {
+        font-size: 1.3rem;
+        padding: 0;
+    }
+    .cards{
+        height: 200px;
+    }
+    .banner_content{
+        width: 50%;
+        padding-left: 50px;
+        padding-top: 60px;
+    }
+    .banner_heading{
+        font-size: 3rem;
+        color: #e9e9e9;
+        letter-spacing:2px;
+        line-height: 1.5;
+    }
+    .banner_desc{
+        font-size:1.2rem;
+        color: #fff;
+        margin-bottom:20px;
+    }
+    .banner_btn{
+        padding: 10px 20px;
+        font-size:1.2rem;
+        background-color: #E0BB20;
+        border-radius:5px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        font-weight: 600;
+    }
+
+}
+    /* @media (min-width:993px) and (max-width:1024px) {
+        .banner{
+            height:65vh;
+        
+        }
+
+    } */
+
+
+/* @media (min-width: 768px) {
+    .banner{
+        height:40vh;
+       
+    }
+}
+
+@media (min-width: 500px) {
+    .banner{
+        height:35vh;
+    }
+}
+
+@media (min-width: 420px) {
+    .banner{
+        height:25vh;
+       
+    }
+}
+
+
+@media (min-width: 320px) {
+    .banner{
+        height:20vh;       
+    }
+}
+
+
+@media (min-width: 992px) {
+    .banner{
+        height:40vh;       
+    }
+}
+
+
+@media (min-width: 1024px) {
+    .banner{
+        height:50vh;       
+    }
+} */
